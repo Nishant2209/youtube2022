@@ -5,36 +5,69 @@ const Featured = () => {
     <div className="featured">
       <div className="featuredItem">
         <img
-          src="https://cf.bstatic.com/xdata/images/city/max500/957801.webp?k=a969e39bcd40cdcc21786ba92826063e3cb09bf307bcfeac2aa392b838e9b7a5&o="
+          src="https://www.reachfirst.com/wp-content/uploads/2018/08/Web-Development.jpg"
           alt=""
           className="featuredImg"
         />
         <div className="featuredTitles">
-          <h1>Dublin</h1>
-          <h2>123 properties</h2>
+          <h1>Web Development</h1>
+          <h2>12 Mentors</h2>
         </div>
       </div>
       
       <div className="featuredItem">
         <img
-          src="https://cf.bstatic.com/xdata/images/city/max500/690334.webp?k=b99df435f06a15a1568ddd5f55d239507c0156985577681ab91274f917af6dbb&o="
+          src="https://www.w2ssolutions.com/blog/wp-content/uploads/2019/07/ios-app-development-india.png"
           alt=""
           className="featuredImg"
         />
         <div className="featuredTitles">
-          <h1>Reno</h1>
-          <h2>533 properties</h2>
+          <h1>IOS Development</h1>
+          <h2>5 Mentors</h2>
         </div>
       </div>
       <div className="featuredItem">
         <img
-          src="https://cf.bstatic.com/xdata/images/city/max500/689422.webp?k=2595c93e7e067b9ba95f90713f80ba6e5fa88a66e6e55600bd27a5128808fdf2&o="
+          src="https://reliasoftware.com/static/9ce8aa204a21e69716018fee472b042c/the-complete-guide-to-mobile-app-development-2021.png"
           alt=""
           className="featuredImg"
         />
         <div className="featuredTitles">
-          <h1>Austin</h1>
-          <h2>532 properties</h2>
+          <h1>App Development</h1>
+          <h2>10 Mentors</h2>
+        </div>
+      </div>
+      <div className="featuredItem">
+        <img
+          src="https://repository-images.githubusercontent.com/403817624/3d10f761-1027-4d0a-9906-48361e466d87"
+          alt=""
+          className="featuredImg"
+        />
+        <div className="featuredTitles">
+          <h1>DSA</h1>
+          <h2>20 Mentors</h2>
+        </div>
+      </div>
+      <div className="featuredItem">
+        <img
+          src="https://www.perfecto.io/sites/default/files/image/2020-09/social-blog-classifying-ai-ml-tools-2.jpg"
+          alt=""
+          className="featuredImg"
+        />
+        <div className="featuredTitles">
+          <h1>AI/ML</h1>
+          <h2>5 Mentors</h2>
+        </div>
+      </div>
+      <div className="featuredItem">
+        <img
+          src="https://www.patriotsoftware.com/wp-content/uploads/2022/01/what-is-blockchain-1.jpg"
+          alt=""
+          className="featuredImg"
+        />
+        <div className="featuredTitles">
+          <h1>Blockchain</h1>
+          <h2>3 Mentors</h2>
         </div>
       </div>
     </div>

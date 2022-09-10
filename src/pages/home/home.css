@@ -10,3 +10,11 @@
   width: 1024px;
   font-size: 20px;
 }
+
+@media (max-width: 768px) {
+  .homeContainer {
+    margin : 20px;
+    margin-top: 40px;
+    gap: 0px;
+  }
+}

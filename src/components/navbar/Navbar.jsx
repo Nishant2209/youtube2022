@@ -4,10 +4,14 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navContainer">
-        <span className="logo">lamabooking</span>
+        <h1 className="logo">V- Guide</h1>
         <div className="navItems">
-          <button className="navButton">Register</button>
-          <button className="navButton">Login</button>
+          <a href="https://vguide.vercel.app/register.html">
+            <button className="navButton">Register</button>
+          </a>
+          <a href="https://vguide.vercel.app/login.html">
+            <button className="navButton">Login</button>
+          </a>
         </div>
       </div>
     </div>

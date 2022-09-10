@@ -1,6 +1,6 @@
 .navbar{
   height: 50px;
-  background-color: #003580;
+  background-color: #11698E;
   display: flex;
   justify-content: center;
 }
@@ -16,12 +16,51 @@
 
 .logo{
   font-weight: 500;
+  font-size: 2rem;
 }
 
 .navButton{
   margin-left: 20px;
   border: none;
-  padding: 5px 10px;
+  padding: 5px 15px;
   cursor: pointer;
-  color: #003580;
+  color: #11698E;
+  font-size: large;
+  border-radius: 9999px;
+  background-color: white;
+}
+
+.navButton:hover{
+  scale: 1.1;
+  transition: all ease-in-out 250ms;
+}
+
+@media (max-width: 768px) {
+  .navContainer {
+    margin: 0 20px;
+  }
+  
+  .logo {
+    width: 50%;
+    font-size: 2rem;
+  }  
+   .navButton {
+    font-size: x-small;
+   }
+}
+
+@media ((min-width:768px) and (max-width: 976px)) {
+  .navbar {
+    width: 98%;
+    margin: auto;
+  }
+
+  .navContainer {
+    margin: 0 30px;
+  }
+
+  .logo {
+    width: 70%;
+    font-size: 2.5rem;
+  } 
 }

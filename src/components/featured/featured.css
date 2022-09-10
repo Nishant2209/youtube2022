@@ -1,7 +1,8 @@
 .featured{
   width: 100%;
   max-width: 1024px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
   justify-content: space-between;
   gap: 20px;
   z-index: 1;
@@ -26,4 +27,22 @@
   position: absolute;
   bottom: 20px;
   left: 20px;
+}
+
+@media (max-width: 768px){
+  .featured {
+    display: block; 
+    padding: 5px 10px;
+  } 
+
+  .featuredItem {
+    margin: 30px 10px;
+  }
+} 
+
+@media (max-width: 976px) {
+  .featured {
+    width: 80%;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+  }
 }

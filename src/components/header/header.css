@@ -1,9 +1,14 @@
 .header {
-  background-color: #003580;
-  color: white;
+  background-color: #11698E;
+  color: #F8F1F1;
   display: flex;
   justify-content: center;
   position: relative;
+}
+
+.headerTitle {
+  font-size: x-large;
+  font-weight: bold;
 }
 
 .headerContainer {
@@ -29,7 +34,7 @@
 }
 
 .headerListItem.active {
-  border: 1px solid white;
+  border: 1px solid #F8F1F1;
   padding: 10px;
   border-radius: 20px;
 }
@@ -38,13 +43,31 @@
   margin: 20px 0px;
 }
 
-.headerBtn {
-  background-color: #0071c2;
-  color: white;
+.headerBtn1 {
+  background-color: #F8F1F1;
+  color: #11698E;
   font-weight: 500;
   border: none;
-  padding: 10px;
+  padding: 10px 15px;
   cursor: pointer;
+  border-radius: 9999px;
+  font-weight: 700;
+}
+
+.headerBtn1:hover{
+  scale: 1.1;
+  transition: all ease-in-out 250ms;
+}
+
+.headerBtn2 {
+  background-color: #11698E;
+  color: #F8F1F1;
+  font-weight: 500;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 9999px;
+  font-size: medium;
 }
 
 .headerSearch {
@@ -53,17 +76,18 @@
   border: 3px solid #febb02;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 10px 0px;
+  justify-content: space-between;
+  padding: 10px 10px;
   border-radius: 5px;
   position: absolute;
   bottom: -25px;
-  width: 100%;
+  left: 25%;
+  width: 50%;
   max-width: 1024px;
 }
 
 .headerIcon {
-  color: lightgray;
+  color: #11698E;
 }
 
 .headerSearchItem {
@@ -75,54 +99,49 @@
 .headerSearchInput {
   border: none;
   outline: none;
-}
-
-.headerSearchText {
-  color: lightgray;
-  cursor: pointer;
-}
-
-.date {
-  position: absolute;
-  top: 50px;
-  z-index: 2;
-}
-
-.options {
-  z-index: 2;
-  position: absolute;
-  top: 50px;
-  background-color: white;
-  color: gray;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
-}
-
-.optionItem {
-  width: 200px;
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-}
-
-.optionCounter {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 12px;
+  width: 20rem;
   color: black;
 }
 
-.optionCounterButton {
-  width: 30px;
-  height: 30px;
-  border: 1px solid #0071c2;
-  color: #0071c2;
+.headerSearchText {
+  color: black;
   cursor: pointer;
-  background-color: white;
 }
 
-.optionCounterButton:disabled {
-  cursor: not-allowed;
+@media (max-width: 768px) {
+  .headerSearchInput {
+    width: 8rem;
+  }
+  
+  .headerSearch {
+    width: 85%;
+    left: 0px;
+    margin-left: 20px;
+  }
+
+  .headerContainer {
+    margin: 20px 20px 100px 20px;
+  }
+
+  .headerTitle {
+    font-size: medium;
+  }
+   .headerDesc {
+    font-size: small;
+   }
+}
+
+@media ((min-width:768px) and (max-width: 976px)) {
+  .headerSearchInput {
+    width: 15rem;
+  }
+
+  .headerContainer {
+    margin: 20px 30px 100px 30px;
+  }
+
+  .header {
+    width: 98%;
+    margin: auto;
+  }
 }
